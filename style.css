@@ -3,10 +3,9 @@
     background-color: rgb(22, 18, 82); 
     border-top-style: solid; 
     border-top-width: 2px; 
-    border-top-color: black; /*#0BADA6*/
+    border-top-color: black;
     color: white; 
     min-height: 40px; 
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 15px; 
     text-align: center; 
     position: fixed;
@@ -16,63 +15,31 @@
     padding-top: 7px; 
     }
 
-/* NAVBAR */
 .navbar {
-    max-height: 44px; 
+  background-color: rgb(22,18,82);
+}
+
+/* @media(max-width: 700px){
+
+  nav .navbar-collapse.collapse {
+      clear: both;
+      float: left;
   }
-  
-/* Styling for Navbar Opioids button */
-.navigation .navbar-brand {
-  margin-left: 30px; 
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  border-radius: 4px;
-  background-color: white;
-  color: rgb(22, 18, 82);
+  nav .navbar-brand {
+      margin-left: 15px;
   }
-  
-/* Background color of Navbar & fonts */
-.navbar {
-  background-color: rgb(22, 18, 82); 
-  font-size: 15px; 
-}
-  
-/* Items in dropdown menu */
-.dropdown-item {
-  color: rgb(8, 40, 109) !important; 
-}
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      padding-left: 0;
+  }
+  ul.navbar-nav {
+      padding-left: 20px;
+  } 
+  nav .navbar-nav li a {
+      display: block;
 
-/* Data link */
-.navbar-nav .nav-item .nav-link-data {
-  background-color: white;
-  border-radius: 4px;
-  margin-right: 12px;
-  padding-right: 15px;
-  padding-left: 15px;
-  color: rgb(22, 18, 82);
-}
+  }
 
-/* 'About the project' link */
-.navbar-nav .nav-item .nav-link-about {
-  background-color: white;
-  border-radius: 4px;
-  color: rgb(22, 18, 82);
-}
-  
-.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover {
-  background-color:rgb(214, 205, 205) !important; 
-}
-  
-/* Hover over 'OPIOIDS' button on the left */
-.navbar-brand:hover {
-  background-color: rgb(0, 255, 242);   
-}
-
-/* User-hover over right side Navbar links */
-.nav-link:hover {
-  background-color:rgb(0, 255, 242) !important;
-}
+}  */

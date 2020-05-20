@@ -8,36 +8,58 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
-        <!-- NavBar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">Home</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="KNN.html">K-Nearest Neighbors</a>
-                <li class="nav-item">
-                  <a class="nav-link" href="LogisticRegression.html">Logistic Regression</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="RandomForest.html">Random Forest</a>
-                </li>
-              </ul>
+      <!-- NavBar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="KNN.html">K-Nearest Neighbors</a>
+            <li class="nav-item">
+              <a class="nav-link" href="LogisticRegression.html">Logistic Regression</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="RandomForest.html">Random Forest</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class = "container"> 
+        <div class = "row">
+          <div class = "col-md-12">
+            <h3>Random Forest</h3>
+          </div>
+        </div>
+          <div class = "row">
+            <div class = "col-md-12">
+              <p>At first I fed just the 10 questions into the Random Forest Classifier and got a Training Score of 1.0 and a
+                Testing Score of 0.978.  While those are really good results, I wanted to see what would happen if different inputs
+                were used. Factoring in all the demographic information, it brought the Testing Score down to 0.964. Just for fun,
+                I wanted to see what would happen if we used if the person has Autism to see if they would have a family history of it.
+                And there was a Testing Score of 0.842.
+              </p>
+              <p>I noticed that, while it varied each time I ran the model, A9 was usually the question that ranked the highest in importance
+                out of all the questions.  I decided to compare those who had the answer associated with ASD and were found to have ASD with those 
+                who answered the question with the ASD answer but didn't have ASD. A Z-test for proportions was used and the p-value was, 5.984858034448194e-59. 
+                Since the p-value is so small, we reject the null hypothesis, meaning that if someone answers with the ASD associated response they are more likely
+                to have ASD.
+              </p>
             </div>
-          </nav>
-        <h3>Random Forest</h3>
-        <h4>Process</h4>
-        <p>Here's where we can ramble about our process for how we settled on the final version
-            of our machine learning models
-        </p>
-        <h4>Findings</h4>
-        <p>Here we can talk about the findings and outputs</p>
-        <h4>Take a Gander at some Code</h4>
-        <a href="https://colab.research.google.com/drive/1wGviirjVn4GVfEuaI_oHly-q-EOZ9bDt?usp=sharing">Random Forest Final Jupyter Notebook</a>
-        <br>
-        <a href="#">Random Forest Testing Jupyter Notebook</a>
+          </div>
+        <div class = "row">
+          <div class = "col-md-12">
+            <h4>Take a Gander at some Code</h4>
+            <a href="https://colab.research.google.com/drive/1wGviirjVn4GVfEuaI_oHly-q-EOZ9bDt?usp=sharing">Random Forest Final Jupyter Notebook</a>
+            <br>
+            <a href="https://colab.research.google.com/drive/1OO_5QPLsStZqiJqVYiSb735w84ck8pJW?usp=sharing">Random Forest Testing Jupyter Notebook</a>
+          </div>
+        </div>
+      </div>
+        
         <footer>
             <div class="footer">Copyright &copy; Liz Jones, Melissa Keller, & Vallie Tracy 2020</div>
         </footer>
