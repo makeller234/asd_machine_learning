@@ -1,14 +1,11 @@
 /* FOOTER */
-.footer {
+.page-footer {
     background-color: rgb(22, 18, 82); 
-    border-top-style: solid; 
-    border-top-width: 2px; 
-    border-top-color: black;
     color: white; 
     min-height: 40px; 
     font-size: 15px; 
     text-align: center; 
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -18,28 +15,3 @@
 .navbar {
   background-color: rgb(22,18,82);
 }
-
-/* @media(max-width: 700px){
-
-  nav .navbar-collapse.collapse {
-      clear: both;
-      float: left;
-  }
-  nav .navbar-brand {
-      margin-left: 15px;
-  }
-  .navbar-collapse {
-      border-top: 1px solid transparent;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      padding-left: 0;
-  }
-  ul.navbar-nav {
-      padding-left: 20px;
-  } 
-  nav .navbar-nav li a {
-      display: block;
-
-  }
-
-}  */
