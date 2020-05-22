@@ -1,3 +1,24 @@
+.title {
+  text-align: center;
+}
+
+.separator {
+  background-color: black;
+}
+
+.lite {
+  font-weight: lighter;
+}
+
+.model {
+  padding: 30px;
+}
+
+.blinks {
+  padding-bottom: 100px;
+  
+}
+
 /* FOOTER */
 .page-footer {
     background-color: rgb(22, 18, 82); 

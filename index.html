@@ -32,48 +32,50 @@
       <!-- Body -->
       <div class = "container-fluid">
         <!-- Title Row -->
-        <div class = "row">
+        <div class = "row title">
           <div class = "col-md-12">
             <h1>Autism Spectrum Disorder (ASD)</h1>
-            <h4 class = "font-weight-light"><i>Adult ASD Detection Using Machine Learning</i></h4>
+            <h4 class = "lite"><b>Adult ASD Detection Using Machine Learning</b></h4>
           </div>
         </div>
+        <hr class = "separator">
         <!-- Second row -->
         <div class = "row">
           <div class = "col-md-5">
             <img class = "img-thumbnail" src = "Resources/ASDTestsApp.PNG" alt = "ASDTests App">
           </div>
-          <div class = "col-md-7">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolore explicabo iure
-               distinctio accusamus aperiam tenetur quasi, nesciunt illo ipsum doloremque quidem odio rem, 
-               laborum pariatur. Ducimus veritatis commodi adipisci?</p>
+          <div class = "col-md-7 pl-5 pr-5">
+            <p>We thought it would be interesting to use data we found on Autism Diagnoses from Fadi Thabtah who had used these
+              data sets to for their own machine learning projects.  The data sets and publications on the data sets can be 
+              found <a href="http://fadifayez.com/publications/#datasets">here.</a>  We focused on the Adults dataset.</p>
           </div>
         </div>
         <br>
         <br>
         <!-- Third Row -->
-        <div class = "row">
+        <div class = "row title">
           <div class = "col-md-12">
-            <h1 class = "font-weight-light">Overview of the Autism Questionnaire and Resulting Dataset</h1>
+            <h1 class = "lite">Overview of the Autism Questionnaire and Resulting Dataset</h1>
           </div>
         </div>
         <br>
         <!-- Fourth Row -->
         <div class = "row">
-          <div class = "col-md-7">
+          <div class = "col-md-7 pl-5 pr-5">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequuntur dicta illum odit,
                dignissimos voluptates mollitia voluptatum maxime aut totam ex temporibus aperiam exercitationem 
                quisquam quaerat, asperiores eveniet. Accusantium, ad.</p>
           </div>
-          <div class = "col-md-5">
+          <div class = "col-md-5 pr-5">
             <img class = "img-thumbnail" src = "Resources/AQ-10questionnaireTable.PNG" alt = "AQ-10 Survey">
           </div>
         </div>
         <br>
         <br>
+        <br>
         <!-- Fifth Row -->
         <div class = "row">
-          <div class = "col-md-4">
+          <div class = "col-md-4 pl-5">
             <table border="1" class="table table-bordered table-hover table-sm">
               <thead class = "thead thead-light">
                 <tr style="text-align: right;">
@@ -117,70 +119,107 @@
               </tbody>
             </table>
           </div> <!--end of col-4/table -->
-          <div class = "col-md-8">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Soluta minus enim, odio minima aperiam, vitae accusantium consequuntur eos reprehenderit maxime, 
-              aut molestiae asperiores rerum corporis distinctio itaque illo vel recusandae.</p>
-          </div>
-        </div>
-        <br>
-        <br>
-        <!-- Sixth Row -->
-        <div class = "row">
-          <div class = "col-md-12">
-            <h3>MACHINE LEARNING MODELS</h3>
-          </div>
-        </div>
-      </div>
-      <br>
-      <br>
-      <!-- Seventh Row -->
-      <div class = "row">
-        <div class = "col-md-4">
-          <a href = "Webpages/KNN.html">K-Nearest Neighbor</a>
-        </div>
-        <div class = "col-md-4">
-          <a href = "Webpages/LogisticRegression.html">Logistic Regression</a>
-        </div>
-        <div class = "col-md-4">
-          <a href = "Webpages/RandomForest.html">Random Forest</a>
-        </div>
-      </div>
-
-
-
-      <div class = "container">
-        <div class = "row">
-          <div class = "col-md-12">
-            <h1>Autism Spectrum Disorder (ASD)</h1>
-            <p>We thought it would be interesting to use data we found on Autism Diagnoses from Fadi Thabtah who had used these
-              data sets to for their own machine learning projects.  The data sets and publications on the data sets can be 
-              found <a href="http://fadifayez.com/publications/#datasets">here.</a>  We focused on the Adults dataset.
+          
+          
+          <div class = "col-md-8 pl-5 pr-5">
+            <p>While our machine learning models focused on the 10 questions from the AQ-10 Questionnaire as inputs,
+              we also analyzed the makeup of the dataset.  In addition to individual plus at-large scoring for each 
+              participant, the dataset also contains information on broader societal groupings for each participant.
             </p>
+            <p>Of particular interest to our group were Family History of ASD, Sex, Age, Ethnicity, and User Type.  We 
+               initially hypothesized that family history would be an important factor in the machine learning, but it's 
+               actually a weak correlation according to our models.
+            </p>
+            <p>As we did feature selection, we noticed that both white and middle eastern ethnicities were weighted highly, 
+              even higher than even sex or family history.  Of note, participants of white or middle eastern ethnicities
+              make up an overwhelming majority of the dataset. We did look at the ethnic breakdown of all users, and also 
+              compared the rates of autism within the whole group to rates within each ethnicity.  It could be beneficial to
+              analyze a more evenly distributed ethnic classification.  Because Autism is a global medical
+              diagnosis, further ethnic analysis could help to hone ML detection globally.  Or upon further analysis, we might 
+              find that ethnicity is of very small significance. 
+            </p>
+            <p>Lastly, we explored how user type might impact the results of the machine learning models.  User types included:
+              parent, self, relative, healthcare professional, friend, others, and teacher.  We created a series of boxplots
+              to analyze the score distribution (ranging from 0 to 10) based on the user, and broken apart by classification. 
+              We found that there appears to be a stable median 50% across both groups. This could indicate that the test is 
+              viable in terms of giving steady results, not largely swayed based on who's taking it.
+            </p>
+            <h5><u>Please visit our Google Colab notebooks to explore the code and view our analysis:</u></h5>
+            <a href="https://colab.research.google.com/drive/1kFYPCkDgUEWmdKT9P6EubalOWtpESntJ" target="_blank">Ethnicity Analysis</a>
+            <br>
+            <a href="https://colab.research.google.com/drive/1LXRvfVsu6a74uytcR1v-jk0WpaQpCgG_" target="_blank">Exploring Sex, Family History, and Age</a>
+            <br>
+            <br>
+            <p><i><u>FEATURE SELECTION:</u></i> While we did explore all components of the dataset, we ultimately focused on the 10 questions
+              from the AQ-10 questionnaire for our feature selection. Please follow 
+              <a href="https://colab.research.google.com/drive/1d5NC_hoNrAnLx9fDpJm9diTu4lQH6chn" target="_blank">this link</a> to explore our 
+              correlation heat map, which includes all questions plus Age.
+            </p>
+   
           </div>
-        </div>
-        <div class = "row">
+        </div>  <!-- end of fifth row -->
+        <br>
+        <br>
+
+        <!-- Sixth Row -->
+        <div class = "row title">
           <div class = "col-md-12">
-            <h1 class = "font-weight-light">Machine Learning Models</h1>
+            <h1>MACHINE LEARNING MODELS</h1>
           </div>
         </div>
-        <div class = "row">
+
+        <!-- Seventh Row -->
+        <div class = "row blinks title">
+          
           <div class = "col-md-4">
-            <a href = "Webpages/KNN.html">K-Nearest Neighbor</a>
+            <h3>
+              <a href="Webpages/KNN.html">K-Nearest Neighbors</a>
+            </h3>
           </div>
+                
           <div class = "col-md-4">
-            <a href = "Webpages/LogisticRegression.html">Logistic Regression</a>
+            <h3>
+              <a href="Webpages/KNN.html">Logistic Regression</a>
+            </h3>
           </div>
+                
           <div class = "col-md-4">
-            <a href = "Webpages/RandomForest.html">Random Forest</a>
+            <h3>
+              <a href="Webpages/KNN.html">Random Forest</a>
+            </h3>
           </div>
+        
         </div>
+
+
       </div>
+      
+      
+      
+
+
+      
+  
+
+
+
+
+
+  
+    
+
+
+
+    
+          
+       
+
+     
 
     <!-- Footer Section -->
     <footer class = "page-footer">
       <div class="footer-copyright text-center py-3">Copyright &copy; Liz Jones, Melissa Keller, & Vallie Tracy 2020</div>
     </footer>  
-
+         
     </body>
 </html>

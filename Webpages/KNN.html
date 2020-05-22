@@ -28,10 +28,10 @@
         </div>
       </nav>
       <div class = "container">
-        <div class = "row">
+        <div class = "row title model">
           <div class = "col-md-12">
-            <h3>K-Nearest Neighbors</h3>
-            <h5>Explored by Vallie Tracy</h5>
+            <h1>K-Nearest Neighbors</h1>
+            <h5 class = "lite"><b>Explored by Vallie Tracy</b></h5>
           </div>
         </div>
         <div class = "row">
@@ -39,15 +39,15 @@
             <p>Before doing any feature selection, I performed a pd.get_dummies and kept all inputs
               except 'Score', 'Class', and 'Case No'.  K=21 appeared to be where the graph leveled off, 
               so using 21 neighbors, I got an accuracy score of 0.925. Because K-Nearest Neighbors doesn't 
-              have it's own feature selections method, I used ExtraTreesClassifier to determine the heighest
-              weighted inputs. All 10 questions, plus Age, ranked as the top 11 features, with Age at rank 10, 
-              and question 'A8' in 11th place, only behind Age by a weight of two ten-thousandth.
+              have its own feature selections method, I used ExtraTreesClassifier to determine the heighest
+              weighted inputs. Making up the top 11 features were all 10 questions, plus Age.  Age ranked tenth,
+              and question 'A8' was ranked at 11, only behind by a weight of two ten-thousandth.
             </p>
             <p>After performing a gridsearch to tune the hyperparameters, the testing score did bump up, from 
               .925 to ~.947.  I then proceeded to alter the feature selection five times.  In addition to the
               questions, I focused on Age, Family History of ASD, Jaundice, and Sex. Though ethnicity inputs of
               'white' and 'middle eastern' ranked 12th and 13th, I chose to not focus on ehtnicity because two 
-              ethnicies accounted for the overwhelming majority of ethnicities.
+              ethnicies accounted for the overwhelming majority.
           </p> 
           <p>Through the five feature selection iterations, one-by-one, I removed the aforementioned features
             I had chosen to focus on, so I eventually was left with only the 10 AQ-10 questions as inputs.  The
@@ -77,14 +77,15 @@
                 
           </div>
         </div>
+        
         <div class = "row">
           <div class = "col-md-12">
             <h4>Take a Gander at some Code</h4>
           </div>
         </div>
-        <div class = "row">
+        <div class = "row blinks">
           <div class = "col-md-12">
-            <a href="https://colab.research.google.com/drive/1EgHT7stHlNNtqoTnv1C4OuWiefeEZaHu">Random Forest Final Jupyter Notebook</a>
+            <a href="https://colab.research.google.com/drive/1EgHT7stHlNNtqoTnv1C4OuWiefeEZaHu" target="_blank">K-Nearest Neighbors Final Jupyter Notebook</a>
           </div>
         </div>
       
