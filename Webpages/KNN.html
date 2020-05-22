@@ -31,13 +31,50 @@
         <div class = "row">
           <div class = "col-md-12">
             <h3>K-Nearest Neighbors</h3>
+            <h5>Explored by Vallie Tracy</h5>
           </div>
         </div>
         <div class = "row">
           <div class = "col-md-12">
-            <p>Here's where we can ramble about our process for how we settled on the final version
-                of our machine learning models
+            <p>Before doing any feature selection, I performed a pd.get_dummies and kept all inputs
+              except 'Score', 'Class', and 'Case No'.  K=21 appeared to be where the graph leveled off, 
+              so using 21 neighbors, I got an accuracy score of 0.925. Because K-Nearest Neighbors doesn't 
+              have it's own feature selections method, I used ExtraTreesClassifier to determine the heighest
+              weighted inputs. All 10 questions, plus Age, ranked as the top 11 features, with Age at rank 10, 
+              and question 'A8' in 11th place, only behind Age by a weight of two ten-thousandth.
             </p>
+            <p>After performing a gridsearch to tune the hyperparameters, the testing score did bump up, from 
+              .925 to ~.947.  I then proceeded to alter the feature selection five times.  In addition to the
+              questions, I focused on Age, Family History of ASD, Jaundice, and Sex. Though ethnicity inputs of
+              'white' and 'middle eastern' ranked 12th and 13th, I chose to not focus on ehtnicity because two 
+              ethnicies accounted for the overwhelming majority of ethnicities.
+          </p> 
+          <p>Through the five feature selection iterations, one-by-one, I removed the aforementioned features
+            I had chosen to focus on, so I eventually was left with only the 10 AQ-10 questions as inputs.  The
+            highest testing score came in the last iteration, with only the questions as inputs.
+          </p> 
+           
+          <p><u>Some interesting notes:</u>  
+          
+          <ul>
+
+            <li>Even though Age ranked within the top 10 inputs, there wasn't
+              any variance in the testing score after gridsearch (though the variance was ~1.1% for the testing score
+              before hyerparameter tuning).
+            </li> 
+            <li>Hyperparameter tuning: algorithm jumped around a bit between auto, brute,
+              and ball_tree.  The computer chose neighbors of 19-21 for a majority of the feature selection tests.
+            </li> 
+            <li>Precision: The precision of the '1' label (1 = classification of yes for ASD) didn't improve until 
+              the last feature selection tweak. It jumped from 0.91 to .97 in the final feature selection, where I removed 
+              all except for the questions. I don't think it has to do with the smaller sample size since it isn't 
+              across-the-board. Unsure where this is stemming from, might be something to explore.
+            </li> 
+
+          </ul>
+          
+        </p> 
+                
           </div>
         </div>
         <div class = "row">
