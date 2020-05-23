@@ -62,12 +62,16 @@
           
           <ul>
 
-            <li>Even though Age ranked within the top 10 inputs, there wasn't
-              any variance in the testing score after gridsearch (though the variance was ~1.1% for the testing score
-              before hyerparameter tuning).
+            <li>Even though Age ranked within the top 10 inputs, there was 0 variance in the testing score after gridsearch, 
+              both before and after Age was the last input removed outside of the questions.  But the variance was 
+              ~1.1% for the testing score before hyerparameter tuning, meaning the model improved, but ~.986 appears 
+              to be a threshold. If we look at the correlation heat map, our findings do correlate with the mapping of Age to Class, in 
+              that Age is a weak classifier.
             </li> 
             <li>Hyperparameter tuning: algorithm jumped around a bit between auto, brute,
-              and ball_tree.  The computer chose neighbors of 19-21 for a majority of the feature selection tests.
+              and ball_tree.  The computer chose neighbors of 19-21 for a majority of the feature selection tests.  Could we have
+              expected to see any correlation between the number of neighbors and how the machine naturally clustered participants
+              in K-means?
             </li> 
             <li>Precision: The precision of the '1' label (1 = classification of yes for ASD) didn't improve until 
               the last feature selection tweak. It jumped from 0.91 to .97 in the final feature selection, where I removed 
