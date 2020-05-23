@@ -45,9 +45,28 @@
             <img class = "img-thumbnail" src = "Resources/ASDTestsApp.PNG" alt = "ASDTests App">
           </div>
           <div class = "col-md-7 pl-5 pr-5">
-            <p>We thought it would be interesting to use data we found on Autism Diagnoses from Fadi Thabtah who had used these
-              data sets to for their own machine learning projects.  The data sets and publications on the data sets can be 
-              found <a href="http://fadifayez.com/publications/#datasets">here.</a>  We focused on the Adults dataset.</p>
+            <h3><u>Objectives</u></h3>
+            <p class = "pt-3">We thought it would be interesting to use data we found on Autism Diagnoses from Fadi Thabtah, who had used these data
+               sets for his own machine learning projects.  He is currently a professor of Computer Science & Data Analytics at New Zealand's
+               Manukau Institute of Technology.  The data sets and publications on the data sets can be 
+              found <a href="http://fadifayez.com/publications/#datasets">here.</a>  We focused on the Adults dataset.
+            </p>
+            <p>Professor Thabtah's objectives for his machine learning model were to explore a ML technique called Covering, which is an understudied
+               classification approach. He and his colleagues set out to create a new Autism Detection method based in Covering.
+            </p>  
+            <p>We set out to dive deeper into machine learning with this dataset as our vehicle.  We decided to explore K-Nearest Neighbors, Logistic
+               Regression, and Random Forest.  
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p><i>A special thank you to Fadi Thabtah for lending us him time and thoughts. And thank you to the University of California Irvine:
+                 Center for Machine Learning and Intelligent Systems for providing access to their repo. </i></p>
+
+            
+
           </div>
         </div>
         <br>
@@ -62,9 +81,32 @@
         <!-- Fourth Row -->
         <div class = "row">
           <div class = "col-md-7 pl-5 pr-5">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequuntur dicta illum odit,
-               dignissimos voluptates mollitia voluptatum maxime aut totam ex temporibus aperiam exercitationem 
-               quisquam quaerat, asperiores eveniet. Accusantium, ad.</p>
+            <h4><u>Origins of the Dataset</u></h4>
+            <p class = "pt-3">The dataset is composed of user information compiled thru an app, created soley for research
+              purposes.  The app is based on something called the AQ-10, which is a condensed version of the clincally
+              accepted diagnostic tool, the AQ test.  The AQ-10 consists of the ten most statistically effective
+              questions. (NOTE: The AQ-10 is not new with this dataset; it is not part of the machine learning).
+            </p>
+            <br>
+            <br>
+            <h4><u>The Data's Structure</u></h4>
+              <li class = "pt-3">There are two classification labels, 'yes' and 'no' (yes = an ASD diagnosis of yes)</li>
+              <li>While the users of the ASDTests app could answer each question with "Definitely", "Slightly Agree", or 
+                 "Slightly Disagree". Then, based on how the user answered, their responses were put into binary format
+                 of 0's and 1's.</li>
+              <li>While the ASDTests app asks users their age range, this dataset has been cleaned, so the row 'Screening
+                  Type' is irrelevant.</li>
+              <li>The 'Score' column ranges from 0 to 10, so depending on the ML method, that column needs to be scaled.</li>
+              <li>Score ('Class' is our label column) is highly tied to questions A1 thru A10.  Something to keep in mind.</li>
+              <li>Overall it's a very clean dataset with only one null row.</li>
+              <li>It's interesting to note all of the data outside of the AQ-10 questions.  We're unsure of the thought process
+                  behind including these questions in the ASDTests app.  Interesting because the AQ-10 questions were the best 
+                  feature selection group for us, but it appears that the app creator has worked substantially with autism.  What is
+                  his thought process and is there more to glean here?
+              </li>
+
+              
+            
           </div>
           <div class = "col-md-5 pr-5">
             <img class = "img-thumbnail" src = "Resources/AQ-10questionnaireTable.PNG" alt = "AQ-10 Survey">
@@ -122,7 +164,8 @@
           
           
           <div class = "col-md-8 pl-5 pr-5">
-            <p>While our machine learning models focused on the 10 questions from the AQ-10 Questionnaire as inputs,
+            <h3 class = "title">Analysis Beyond Machine Learning</h3>
+            <p class = "pt-3">While our machine learning models focused on the 10 questions from the AQ-10 Questionnaire as inputs,
               we also analyzed the makeup of the dataset.  In addition to individual plus at-large scoring for each 
               participant, the dataset also contains information on broader societal groupings for each participant.
             </p>
