@@ -53,13 +53,13 @@
             <h3><u>Objectives</u></h3>
             <p class = "pt-3">We thought it would be interesting to use data we found on Autism Diagnoses from Fadi Thabtah, who had used these data
                sets for his own machine learning projects.  He is currently a professor of Computer Science & Data Analytics at New Zealand's
-               Manukau Institute of Technology.  The data sets and publications on the data sets can be 
+               Manukau Institute of Technology.  The data sets and his subsequent publications can be 
               found <a href="http://fadifayez.com/publications/#datasets" target="_blank">here.</a>  We focused on the Adults dataset.
             </p>
             <p>Professor Thabtah's objectives for his machine learning model were to explore a ML technique called Covering, which is an understudied
                classification approach. He and his colleagues set out to create a new Autism Detection method based in Covering.
             </p>  
-            <p>We set out to dive deeper into machine learning with this dataset as our vehicle.  We decided to explore K-Nearest Neighbors, Logistic
+            <p>We set out to dive deeper into machine learning, with this dataset as our vehicle.  We decided to explore K-Nearest Neighbors, Logistic
                Regression, and Random Forest.  
             </p>
             <br>
@@ -68,7 +68,8 @@
             <br>
             <br>
             <p><i>A special thank you to Fadi Thabtah for lending us him time and thoughts. And thank you to the University of California Irvine:
-                 Center for Machine Learning and Intelligent Systems for providing access to their repo. </i></p>
+                 Center for Machine Learning and Intelligent Systems for providing access to 
+                 <a href = "http://archive.ics.uci.edu/ml/index.php" target = "_blank">their repo. </i></p></a> 
 
             
 
@@ -92,16 +93,20 @@
               accepted diagnostic tool, the AQ test.  The AQ-10 consists of the ten most statistically effective
               questions. (NOTE: The AQ-10 is not new with this dataset; it is not part of the machine learning).
             </p>
+            <p>To view or take the Autism Spectrum Test that built this dataset, 
+              visit the<a href = "http://www.asdtests.com/" target = "_blank"> ASDTests App Webpage.</a>
+            </p>
             <br>
             <br>
             <h4><u>The Data's Structure</u></h4>
               <li class = "pt-3">There are two classification labels, 'yes' and 'no' (yes = an ASD diagnosis of yes)</li>
-              <li>While the users of the ASDTests app could answer each question with "Definitely", "Slightly Agree", or 
+              <li>Users of the ASDTests app could answer each question with one of three options: "Definitely", "Slightly Agree", or 
                  "Slightly Disagree". Then, based on how the user answered, their responses were put into binary format
                  of 0's and 1's.</li>
-              <li>While the ASDTests app asks users their age range, this dataset has been cleaned, so the row 'Screening
+              <li>While the ASDTests app asks users their age range, this dataset has been cleaned, so the column 'Screening
                   Type' is irrelevant.</li>
               <li>The 'Score' column ranges from 0 to 10, so depending on the ML method, that column needs to be scaled.</li>
+              <li>A score of 7 or greater means a higher statistical probability that a user has Autism.</li>
               <li>Score ('Class' is our label column) is highly tied to questions A1 thru A10.  Something to keep in mind.</li>
               <li>Overall it's a very clean dataset with only one null row.</li>
               <li>It's interesting to note all of the data outside of the AQ-10 questions.  We're unsure of the thought process
@@ -169,17 +174,18 @@
           
           
           <div class = "col-md-8 pl-5 pr-5">
-            <h3 class = "title">Analysis Beyond Machine Learning</h3>
+            <h3 class = "title">Analysis of the Dataset</h3>
             <p class = "pt-3">While our machine learning models focused on the 10 questions from the AQ-10 Questionnaire as inputs,
-              we also analyzed the makeup of the dataset.  In addition to individual plus at-large scoring for each 
-              participant, the dataset also contains information on broader societal groupings for each participant.
+              we also analyzed the makeup of the dataset.  In addition to individual and overall scoring for each 
+              participant, plus subsequent classification, the dataset also contains additional information on each user.  This includes:
+              Age, Sex, Ethnicity, Jaundice, Family History of ASD, Residence, Having Used the App Before, Screening Type, and Language.
             </p>
             <p>Of particular interest to our group were Family History of ASD, Sex, Age, Ethnicity, and User Type.  We 
                initially hypothesized that family history would be an important factor in the machine learning, but it's 
                actually a weak correlation according to our models.
             </p>
             <p>As we did feature selection, we noticed that both white and middle eastern ethnicities were weighted highly, 
-              even higher than even sex or family history.  Of note, participants of white or middle eastern ethnicities
+              even higher than sex or family history.  Of note, participants of white and middle eastern ethnicities
               make up an overwhelming majority of the dataset. We did look at the ethnic breakdown of all users, and also 
               compared the rates of autism within the whole group to rates within each ethnicity.  It could be beneficial to
               analyze a more evenly distributed ethnic classification.  Because Autism is a global medical
@@ -201,7 +207,7 @@
             <p><i><u>FEATURE SELECTION:</u></i> While we did explore all components of the dataset, we ultimately focused on the 10 questions
               from the AQ-10 questionnaire for our feature selection. Please follow 
               <a href="https://colab.research.google.com/drive/1d5NC_hoNrAnLx9fDpJm9diTu4lQH6chn" target="_blank">this link</a> to explore our 
-              correlation heat map, which includes all questions plus Age.
+              correlation heat map, which includes all questions, Age, and our target variable, Class.
             </p>
    
           </div>
