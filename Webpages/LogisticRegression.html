@@ -37,21 +37,40 @@
       
         <div class = "row">
           <div class = "col-md-12">
-            <p>Here's where we can ramble about our process for how we settled on the final version
-                of our machine learning models.
-            </p>
+            <p>In our Logistic Regression our goal was to see if the inputs could produce the correct "Label" of having, or not having Autism. After running the first model we realized the ten of the inputs, which were survey questions given to users, directly affected the classification of Autism, or not Autism. Our performance score was nearly %100 which gave us pause. We confirmed the survey questions were skewing the results by ranking the feature importance of the survey questions. 
+                Because this skewed our model we ran two more models, one of which only took in 5 of the survey questions, and another only taking in sex, and whether there was a family history of Autism. An interesting finding we made was that using only 5 of the survey questions, the model gave a nearly % 90 performance successfully classifying autism. 
+                This could have implications if a shorter survey were to be designed. In our last model we only used the inputs of Sex, and whether there was a Family History of Autism. 
+                These two inputs only gave us a performance of %68. For each of these models, we also created a "Confusion Matrix", which details how many times Autism was predicted successfully, with a True Positive, or misdiagnosed with a False Positive. It also lists the same information for a True negative, and False-negative when making a diagnosis of autism. Please see the Jupyter Notebooks for our code, plots and markdown notes!
+            </p> 
           </div>
         </div>
         <div class = "row">
           <div class = "col-md-12">
-            <h4>Take a Gander at some Code</h4>
+            <h4>Click below to view the code.</h4>
           </div>
         </div>
         <div class = "row">
           <div class = "col-md-12">
-            <a href="https://colab.research.google.com/drive/1wGviirjVn4GVfEuaI_oHly-q-EOZ9bDt?usp=sharing">Random Forest Final Jupyter Notebook</a>
+            <a href="https://drive.google.com/open?id=1zKgyvk5ny83fSfxaqkUdPeT2I_Tv5_FQ">Logistic Regression One Jupyter Notebooks</a>
+            
+            
           </div>
         </div>
+        <div class = "row">
+            <div class = "col-md-12">
+              
+              <a href="https://drive.google.com/open?id=1fyTEiszjaqMkRgQzx1AGqBOBCMvtp9LN">Logistic Regression Two Jupyter Notebooks</a>
+              
+              
+            </div>
+          </div>
+          <div class = "row">
+              <div class = "col-md-12">
+                
+                
+                <a href="https://drive.google.com/open?id=1cmYEYagTMDnuDVdYYXuzMAqSOOeADmNx">Logistic Regression Three Jupyter Notebook</a>
+              </div>
+            </div>
       </div>
         <footer class = "page-footer">
           <div class="footer-copyright text-center py-3">Copyright &copy; Liz Jones, Melissa Keller, & Vallie Tracy 2020</div>
