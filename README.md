@@ -1,6 +1,6 @@
 # Adult Autism Detection by Machine Learning
 <b>Researched by Liz Jones, Melissa Keller, & Vallie Tracy</b>     
-*Finished Website:*      
+*Finished Website:*  put website here   
 
 ![WebSnap](/Images/WebSnap.PNG) 
 ## Background     
@@ -34,10 +34,3 @@ In our analysis, we looked at three different classifier approaches: `Logistic R
 
 
 
-![AgeDistribution](/Images/AgeDistribution.png) 
-
-![EthnicityBreakdown](/Images/EthnicityBreakdown.png) 
-
-![TestTakerBoxPlots](/Images/TestTakerBoxPlots.png) 
-
-![Violin_Family_Gender](/Images/Violin_Family_Gender.png) 
