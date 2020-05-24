@@ -1,9 +1,8 @@
 # Adult Autism Detection by Machine Learning
 <b>Researched by Liz Jones, Melissa Keller, & Vallie Tracy</b>     
-*Finished Website:*   <a href = "https://www.google.com/" target = "_blank">This is a google link right now</a>
-
+*Finished Website:*   
 ## Background     
-In this repo, we explore using machine learning to detect autism in adults.  
+In this repo, we explore using machine learning to detect autism in adults.  We inititally found the dataset on the UCI Machine Learning Repository [website](http://archive.ics.uci.edu/ml/datasets/Autism+Screening+Adult).
 
 
 ![HeatMap](/Images/HeatMap.png) 
