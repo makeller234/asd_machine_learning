@@ -8,10 +8,10 @@ The data was compiled in 2018 by Dr. Fadi Thabtah as he and his colleagues explo
 
 In our analysis, we looked at three different classifier approaches: `Logistic Regression`, `K-Nearest Neighbors`, and `Random Forest`.     
 
-## Programming Languages:
+#### *Programming Languages:*
 * Python
 
-## Packages/Libraries Used:
+#### *Packages/Libraries Used:*
 * Sklearn
 * Joblib
 * Pandas
@@ -19,12 +19,12 @@ In our analysis, we looked at three different classifier approaches: `Logistic R
 * Seaborn
 * Matplotlib
 
-## Tools Used to Optimize the Data:
+#### *Tools Used to Optimize the Data:*
 * GridSearchCV for hyperparameter tuning
 * MinMaxScaler for preprocessing
 * Feature Selection: ExtraTreesClassifier, RandomForestClassifier, LogisticRegression.coef_
 
-## Visual Interface:
+#### *Visual Interface:*
 * HTML
 * Bootstrap
  
