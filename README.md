@@ -1,5 +1,9 @@
 # Adult Autism Detection by Machine Learning
+<b>Completed by Liz Jones, Melissa Keller, & Vallie Tracy</b>     
 *Finished Website:*
+
+## Background
+
 
 ![HeatMap](/Images/HeatMap.png) 
 
