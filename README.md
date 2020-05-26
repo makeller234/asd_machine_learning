@@ -9,7 +9,11 @@ In this repo, we explore using machine learning to detect autism in adults.  We 
 
 The data was compiled in 2018 by Dr. Fadi Thabtah as he and his colleagues explored a new approach to machine learning for autism, called Rules-Machine Learning, based on the Covering approach.  Thabtah and colleagues explored datasets grouped by toddler, child, adolescent, and adult.  In this repo, we focus on the adult dataset.
 
-In our analysis, we looked at three different classifier approaches: `Logistic Regression`, `K-Nearest Neighbors`, and `Random Forest`.     
+In our analysis, we looked at three different classifier approaches: `Logistic Regression`, `K-Nearest Neighbors`, and `Random Forest`. 
+
+## Analysis
+Talk about our overall analysis.  Blah blah blah.  Tell them the link to our website can we found at the top of the Read Me.    
+
 ## Technologies Utilizied
 <b>PROGRAMMING LANGUAGES:</b>
 * Python
@@ -31,8 +35,7 @@ In our analysis, we looked at three different classifier approaches: `Logistic R
 * HTML
 * Bootstrap
 
-## Analysis
-...Wrap it all up, probably put some links to the more in-depth analysis on the webpage.
+
 
  
 
