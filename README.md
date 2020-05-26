@@ -26,7 +26,7 @@ Talk about our overall analysis.  Blah blah blah.  Tell them the link to our web
 * Seaborn
 * Matplotlib
 
-<b>DATA OPTIMIZATION TOOLS:</b>
+<b>ML OPTIMIZATION TOOLS:</b>
 * GridSearchCV for hyperparameter tuning
 * MinMaxScaler for preprocessing
 * Feature Selection: ExtraTreesClassifier, RandomForestClassifier, LogisticRegression.coef_
