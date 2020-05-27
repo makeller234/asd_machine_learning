@@ -1,6 +1,6 @@
 # Adult Autism Detection by Machine Learning
 <b>Researched by Liz Jones, Melissa Keller, & Vallie Tracy</b>     
-*Finished Website:*  put website here   
+[Finished Website](https://makeller234.github.io/asd_machine_learning/)
 
 ![WebSnap](/Images/WebSnap.PNG)      
 *A snapshot of our website's homepage*
